@@ -1,0 +1,33 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+
+### Rewriting non-www url to www style urls
+#
+RewriteCond %{HTTP_HOST} ^((edesirs)|(rencontrerplus))
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+#
+###
+
+### Root folder emulation. For files which have to be in 
+### document root we will emulate pseudo root folder.
+#
+RewriteCond %{REQUEST_FILENAME} !pseudoroot\/([^\/]*)$
+RewriteCond %{REQUEST_FILENAME} \/([^\/]*)$
+RewriteCond %{DOCUMENT_ROOT}/pseudoroot/%1 -f
+RewriteRule ^(.*)$ pseudoroot/$1 [L]
+#
+###
+
+### Main rewrite part
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+#
+###
+
+
+# Suhosin cookie plainlist
+php_value suhosin.cookie.plainlist ChatMinMaxState,openChatTab,MsgNotifications,PAPVisitorId,mobileOnline,mobile-login-cookie,isMobile,mobileLang

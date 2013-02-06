@@ -1,0 +1,3 @@
+[submodule "stingle"]
+	path = stingle
+	url = git@github.com:webemedianet/stingle.git
