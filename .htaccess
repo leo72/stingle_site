@@ -27,7 +27,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L]
 #
 ###
-
-
-# Suhosin cookie plainlist
-php_value suhosin.cookie.plainlist ChatMinMaxState,openChatTab,MsgNotifications,PAPVisitorId,mobileOnline,mobile-login-cookie,isMobile,mobileLang
