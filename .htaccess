@@ -4,9 +4,10 @@ RewriteBase /
 
 
 ### Rewriting non-www url to www style urls
+### Replace example.com with your host name
 #
-RewriteCond %{HTTP_HOST} ^((edesirs)|(rencontrerplus))
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} ^example\.com$
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 #
 ###
 
@@ -27,7 +28,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L]
 #
 ###
-
-
-# Suhosin cookie plainlist
-php_value suhosin.cookie.plainlist ChatMinMaxState,openChatTab,MsgNotifications,PAPVisitorId,mobileOnline,mobile-login-cookie,isMobile,mobileLang
