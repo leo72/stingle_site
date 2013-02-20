@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+/* ********** form elements */
+
+.uniForm input[type="text"], 
+.uniForm input[type="password"], 
+option, 
+select, 
+textarea {border: 1px solid #cbc5be; color: #4a4a4a; padding: .1em; font-size: 1em; background: #fff;}
+select {padding: 0;}
+option {border: none; padding: 0 1em 0 0; font-size: 1em}
+.uniForm dl dt {clear: both; display: block; float: left; }
+.uniForm dl dd {display: block; float: left;}
+
+/* ********** default buttons */
+/*
+.uniForm input[type="submit"],
+.uniForm input[type="reset"],
+.uniForm input[type="button"],
+.uniButton {
+    background: #e4e4e4; cursor: pointer; font-size: 8pt; line-height: 1em; padding: .2em .5em; border: 1px solid #e4e4e4; color: #147087; text-transform: lowercase; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;}
+*/
+
+.uniForm input[type="submit"]:hover,
+.uniForm input[type="reset"]:hover,
+.uniForm input[type="button"]:hover,
+.uniButton:hover {border-color: #b50d71; color: #b50d71;}

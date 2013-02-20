@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+{literal}
+/* Site main.css */
+
+/* ********** import */
+@import url("/{/literal}{'css/reset.css'|filePath:true}{literal}");
+@import url("/{/literal}{'css/uniform.css'|filePath:true}{literal}");
+
+p.test {color: red}
+
+
+{/literal}
