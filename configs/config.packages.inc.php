@@ -1,7 +1,7 @@
 <?php
 ///////////  Which packages to load on the site  ///////////
 
-$CONFIG['Packages'][] = array("Output", "ExtendedSmarty");
+$CONFIG['Packages'][] = array("Output", "ExtendedSmarty;UniversalOutput");
 $CONFIG['Packages'][] = array("Host", "HostControllerTemplate");
 $CONFIG['Packages'][] = array("SiteNavigation");
 $CONFIG['Packages'][] = array("Db", "Memcache;QueryBuilder");

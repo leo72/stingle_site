@@ -11,8 +11,8 @@ $CONFIG['Crypto']['AES256']['AuxConfig']['iv'] = '+d4R*TG:Y.;n]Rt[bvROqAPqrOC';
 $CONFIG['Crypto']['AES256']['AuxConfig']['salt'] = '3&fetD7<r<Y>3""drBIF--<]';
 
 
-$CONFIG['Captcha']['Recaptcha']['AuxConfig']['publicKey'] = '6Leq4MMSAAAAADEhwuGmqisBlr4EF2DR42D12NBK';
-$CONFIG['Captcha']['Recaptcha']['AuxConfig']['privateKey'] = '6Leq4MMSAAAAALkB4DVMdxz_VPcj4FhbuJTGldjB';
+$CONFIG['Captcha']['Recaptcha']['AuxConfig']['publicKey'] = '6LfREt4SAAAAAIFKbWugo0A04l6oCW2zdLbcE8v8';
+$CONFIG['Captcha']['Recaptcha']['AuxConfig']['privateKey'] = '6LfREt4SAAAAAH4-kZ7jAj5tGZBhhLUO7a1ZCdLS';
 
 $CONFIG['Logger']['DBLogger']['AuxConfig']['requestLogEnabled'] = false;
 

@@ -5,7 +5,8 @@ $CONFIG['Hooks'] = array(	'BeforePackagesLoad' => array(
 		
 		
 							'BeforeController' => array(
-									'smartyAssigns'
+									'smartyAssigns',
+									'commonLayoutInit'
 									),
 		
 							'NoDebugExceptionHandler' => array(

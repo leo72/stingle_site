@@ -1,1 +1,1 @@
-<p class="test">Hello World!</p>
+<div id="map"></div>
